@@ -6,4 +6,4 @@ while index < len(s):
     if index == -1:
         break
     print('found at', index)
-    index += 2
+    index += len(w)
