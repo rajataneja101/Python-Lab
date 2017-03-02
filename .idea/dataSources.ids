@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - rajat@localhost" uuid="c283e095-cd25-452e-b85e-96b29f1b6f2c">
+    <database-info product="MySQL" version="5.5.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="rajat"/>
+      <table id="2" parent="1" name="cab"/>
+      <table id="3" parent="1" name="linguistic"/>
+      <table id="4" parent="1" name="members"/>
+      <column id="5" parent="2" name="company">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="6" parent="2" name="source">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="7" parent="2" name="destination">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="8" parent="2" name="price">
+        <data-type>int(200)</data-type>
+      </column>
+      <column id="9" parent="2" name="contact">
+        <data-type>int(200)</data-type>
+      </column>
+      <column id="10" parent="2" name="mail">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="11" parent="3" name="company">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="12" parent="3" name="source">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="13" parent="3" name="destination">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="14" parent="3" name="price">
+        <data-type>int(200)</data-type>
+      </column>
+      <column id="15" parent="3" name="contact">
+        <data-type>int(200)</data-type>
+      </column>
+      <column id="16" parent="3" name="mail">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="17" parent="4" name="first_name">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="18" parent="4" name="last_name">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="19" parent="4" name="email">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="20" parent="4" name="uname">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="21" parent="4" name="pass">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="22" parent="4" name="account">
+        <data-type>varchar(200)</data-type>
+      </column>
+    </database-model>
+  </data-source>
+</component>

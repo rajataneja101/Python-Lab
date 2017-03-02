@@ -1,35 +1,25 @@
-class polygon:
-    no_of_side=0
-    sides=[]
-    def __init__(self,no_of_side):
-        self.no_of_side=no_of_side
-    def input_sides(self):
-        for i in range(0,self.no_of_side):
-            print("Enter side ",i+1)
-            n=int(input())
-            self.sides.append(n)
-    def print_sides(self):
-        for i in range(0, self.no_of_side):
-            print("The side ",(i+1),self.sides[i])
-class triangle(polygon):
-    def __init__(self):
-        self.no_of_side=3
-    def find_area(self):
-        sum=0
-        for i in range(0, self.no_of_side):
-            sum+=self.sides[i]
-        return (sum/2)
-n=int(input("Enter the no. of sides"))
-#p=polygon(n)
-q=triangle()
-if n==3:
-    q.input_sides()
-    q.print_sides()
-    k=q.find_area()
-    print(k)
-else:
-    p=polygon(n)
-    p.input_sides()
-    p.print_sides()
-    print
+class Polygon:
+    def __init__(self, no_of_sides):
+        self.n = no_of_sides
+        self.sides = [0 for i in range(no_of_sides)]
 
+    def inputSides(self):
+        self.sides = [float(input("Enter side "+str(i+1)+" : ")) for i in range(self.n)]
+
+    def dispSides(self):
+        for i in range(self.n):
+            print("Side",i+1,"is",self.sides[i])
+class Triangle(Polygon):
+    def __init__(self):
+        Polygon.__init__(self,3)
+
+    def findArea(self):
+        a, b, c = self.sides
+        # calculate the semi-perimeter
+        s = (a + b + c) / 2
+        area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+        print('The area of the triangle is %0.2f' %area)
+t = Triangle()
+t.inputSides()
+t.dispSides()
+t.findArea()
